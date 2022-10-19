@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-using QuestPDF.Fluent;
+﻿using QuestPDF.Fluent;
 using QuestPDF.Previewer;
 using QuestPdfOtherExamples;
 using QuestPdfOtherExamples.Examples;
@@ -20,6 +19,7 @@ while (run)
                 new ColumnsExample(),
                 new ALotOfTextExample(),
                 new CodeSeparationExample(),
+                new ComponentExample(),
                 new ErrorExample()
         }));
 

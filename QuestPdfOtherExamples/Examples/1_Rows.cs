@@ -1,19 +1,11 @@
 ﻿using QuestPDF.Fluent;
-using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using QuestPDF.Previewer;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace QuestPdfOtherExamples.Examples
 {
     public class RowsExample : IQuestPdfExample
     {
-        public Document GetDocument()
+        public IDocument GetDocument()
         {
             var document = Document.Create(container =>
             {

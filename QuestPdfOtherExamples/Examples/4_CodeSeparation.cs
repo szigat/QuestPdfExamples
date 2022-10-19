@@ -1,4 +1,6 @@
 ﻿using QuestPDF.Fluent;
+using QuestPDF.Helpers;
+using QuestPDF.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +11,11 @@ namespace QuestPdfOtherExamples.Examples
 {
     internal class CodeSeparationExample : IQuestPdfExample
     {
-        public Document GetDocument()
+        public IDocument GetDocument()
         {
-            throw new NotImplementedException();
+            IDocument document = new ExampleDocument();
+            
+            return document;
         }
     }
 }
