@@ -27,7 +27,7 @@ namespace QuestPdfOtherExamples.Examples
                             {
                                 column.Item().Row(row =>
                                 {
-                                    row.RelativeItem().ShowEntire().Text(Placeholders.LoremIpsum()).FontColor(Colors.Blue.Medium).Strikethrough(false);
+                                    row.RelativeItem().ShowEntire().Text(Placeholders.LoremIpsum()).FontColor(Colors.Blue.Medium);
                                 });
 
                             }

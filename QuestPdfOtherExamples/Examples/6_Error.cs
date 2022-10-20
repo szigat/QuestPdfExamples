@@ -32,11 +32,10 @@ namespace QuestPdfOtherExamples.Examples
 
                             column.Item().Column(col =>
                             {
-                                col.Item().Width(30).Height(25).Column(innerColumn =>
+                                col.Item().Width(30).Height(20).Column(innerColumn =>
                                 {
-                                    innerColumn.Item()//.Image(Placeholders.Image(200, 100));
-                                        .Width(50)
-                                        .Height(200)
+                                    innerColumn
+                                        .Item()
                                         .Text("This will be a suspiciously long text, but we'll see if it fits here.");
                                 });
                             });

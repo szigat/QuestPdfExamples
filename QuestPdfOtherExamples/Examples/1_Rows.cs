@@ -38,10 +38,5 @@ namespace QuestPdfOtherExamples.Examples
 
             return document;
         }
-
-        public override string ToString()
-        {
-            return "a";
-        }
     }
 }

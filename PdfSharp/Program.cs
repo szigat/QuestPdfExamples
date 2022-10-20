@@ -43,6 +43,4 @@ renderer.Document = document;
 
 renderer.RenderDocument();
 
-var filename = "c:\\temp\\HelloMigraDoc.pdf";
-
-renderer.PdfDocument.Save(filename);
+renderer.PdfDocument.Save("c:\\temp\\HelloMigraDoc.pdf");

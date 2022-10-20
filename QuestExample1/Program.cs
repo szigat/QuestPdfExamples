@@ -1,8 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-using QuestPDF.Fluent;
+﻿using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
-using QuestPDF.Previewer;
 
 Console.WriteLine("Hello, World!");
 
@@ -24,7 +22,6 @@ var document = Document.Create(container =>
             .Column(x =>
             {
                 x.Spacing(20);
-
                 x.Item().Text(Placeholders.LoremIpsum());
                 x.Item().Image(Placeholders.Image(200, 100));
             });
@@ -39,5 +36,4 @@ var document = Document.Create(container =>
     });
 });
 
-//document.ShowInPreviewer();
 document.GeneratePdf("c:\\temp\\example1.pdf");
